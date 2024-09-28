@@ -1,0 +1,53 @@
+.Calculator {
+  box-sizing: border-box;
+  text-align: center;
+  
+}
+
+.Calcontainer{
+  
+  width: 400px;
+  border: 2px solid black;
+  background-color: aqua;
+  margin: auto;
+}
+
+.Displaycon{
+  
+  height: 60px;
+  background-color: aliceblue;
+  border: 2px solid black;
+}
+.Display{
+  font-size: 2rem;
+  text-align: right;
+}
+
+.Buttons{
+  background-color: aquamarine;
+  border: px solid black;
+  display: grid;
+  grid-gap: 2px;
+  
+  grid-template-columns: repeat(auto-fill, minmax(80px, auto));
+}
+.clear-button {
+  grid-column: span 2;
+ 
+}
+
+.clear-button:hover {
+  background-color: #ff4444; /* Darker on hover */
+}
+
+.Buttons > Button:hover {
+  background-color: #ff4444; /* Darker on hover */
+}
+
+
+.Buttons > Button{
+  font-size: 2em;
+  background-color: aquamarine;
+}
+
+
