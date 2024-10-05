@@ -1,39 +1,49 @@
 .Calculator {
   box-sizing: border-box;
   text-align: center;
-  
+  border-radius: 5px;
 }
 
 .Calcontainer{
-  
-  width: 400px;
-  border: 2px solid black;
-  background-color: aqua;
+  background-color: rgb(148, 196, 204);
+  width: 350px;
+  border: 1px solid black;
+  border-radius: 5px;
   margin: auto;
+  padding: 15px;
 }
 
 .Displaycon{
-  
   height: 60px;
   background-color: aliceblue;
-  border: 2px solid black;
+  border: 1px solid black;
 }
-.Display{
-  font-size: 2rem;
+.Displaycon{
+  font-size: 1.8rem;
   text-align: right;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  height: 40px;
+  
+  
 }
 
 .Buttons{
-  background-color: aquamarine;
-  border: px solid black;
+  background-color: rgb(54, 54, 54);
   display: grid;
-  grid-gap: 2px;
+  grid-gap: 4px;
+  grid-template-columns: repeat(4, 1fr);
+  box-shadow: none;
+  border: none;
+  padding: 5px;
+  height: 280px;
+  border-radius: 5px;
   
-  grid-template-columns: repeat(auto-fill, minmax(80px, auto));
 }
-.clear-button {
-  grid-column: span 2;
- 
+
+.clear-Key {
+  grid-column: span 4;
+
 }
 
 .clear-button:hover {
@@ -41,13 +51,22 @@
 }
 
 .Buttons > Button:hover {
-  background-color: #ff4444; /* Darker on hover */
+  background-color: #44caff; /* Darker on hover */
 }
 
 
 .Buttons > Button{
   font-size: 2em;
-  background-color: aquamarine;
+  background-color: rgb(190, 196, 194);
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.2);
+  transition: background-color .2s ease, transform .2s ease;
+  border: none;
+  border-radius: 5px;
+  
 }
 
-
+.MEDINA{
+   margin-top: 18px;
+   font-size: 2em;
+   width: 380px;
+}
